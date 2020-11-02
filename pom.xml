@@ -91,7 +91,7 @@
 				<executions>
 					<execution>
 						<configuration>
-							<projectFile>src/main/resources/PhoneValidationNoParameterization-soapui-project.xml</projectFile>
+							<projectFile>PhoneValidationNoParameterization-soapui-project.xml</projectFile>
 							<endpoint>http://192.168.0.47:7091/SOAPServiceBinding/process/</endpoint>
 							<junitReport>true</junitReport>
 							<!-- This folder is to set the default path for surefire reports -->
