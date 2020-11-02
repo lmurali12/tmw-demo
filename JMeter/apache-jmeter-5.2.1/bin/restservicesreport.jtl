@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="247" it="0" lt="245" ct="89" ts="1603789520108" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="216" sby="284" ng="1" na="1">
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1603789520362" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="292" sby="146" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=SS363</java.net.URL>
+</httpSample>
+
+<httpSample t="354" it="0" lt="308" ct="150" ts="1604301948086" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="286" sby="307" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1604301948604" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="496" sby="178" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=MN123</java.net.URL>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1604301948663" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="281" sby="302" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1604301948722" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="386" sby="178" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=MR123</java.net.URL>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1604301948780" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="279" sby="300" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1604301948838" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="382" sby="178" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=LM123</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1604301948894" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="248" sby="268" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="66" it="0" lt="66" ct="0" ts="1604301948955" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="320" sby="178" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=AB123</java.net.URL>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1604301949022" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="250" sby="270" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1604301949084" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="516" sby="173" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ct="0" ts="1604301949145" s="true" lb="POST API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="286" sby="307" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee</java.net.URL>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ct="0" ts="1604301949207" s="true" lb="GET API" rc="200" rm="OK" tn="RESTSERVICES 1-1" dt="text" by="596" sby="178" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://192.168.0.47:7090/employee?shortname=MN123</java.net.URL>
+</httpSample>
+
+
+</testResults>
