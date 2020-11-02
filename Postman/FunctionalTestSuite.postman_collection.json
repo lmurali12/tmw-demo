@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "0a0415d3-8d7b-43bd-a9bd-d2ba7c428d54",
+		"name": "FunctionalTestSuite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d3fcd04-7385-4b55-b5a4-90ddcb698bb4",
+						"exec": [
+							"tests[\"check status code\"]=responseCode.code==200;\r",
+							"tests[\"check status in the response\"]=responseBody.has(\"success\");\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"ShortName\": \"{{ShortName}}\",\r\n            \"FullName\": \"{{FullName}}\",\r\n            \"PhoneNo\": \"{{PhoneNo}}\",\r\n            \"Address\": \"{{Address}}\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.47:7090/employee",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"47"
+					],
+					"port": "7090",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the emp info",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e627055-e729-4d16-8dfa-bcb5350ab7a9",
+						"exec": [
+							"tests[\"check status code\"]=responseCode.code==200;\r",
+							"tests[\"check status in the response\"]=responseBody.has(\"success\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.0.47:7090/employee?shortname=bsk1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"47"
+					],
+					"port": "7090",
+					"path": [
+						"employee"
+					],
+					"query": [
+						{
+							"key": "shortname",
+							"value": "bsk1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
