@@ -9,7 +9,16 @@
 	<url>http://maven.apache.org</url>
 	
 	
+  <scm>
+      <connection>scm:git:https://github.com/lmurali12/tmw-demo</connection>
+      <developerConnection>scm:git:https://github.com/lmurali12/tmw-demo</developerConnection>
+  </scm>	
 
+  <ciManagement>
+      <system>jenkins</system>
+      <url>http://192.168.0.47:8090/</url>
+  </ciManagement>
+  
 <!--<dependencies>
  			<dependency>
 			<groupId>com.sorenpoulsen</groupId>
@@ -82,7 +91,7 @@
 				<executions>
 					<execution>
 						<configuration>
-							<projectFile>C:\Lavanya\Official\POCs\TMW\API Testing\Final\TMWDemo\Rest Service\Employee-Project-soapui-project.xml</projectFile>
+							<projectFile>RestfulTesting-soapui-project.xml</projectFile>
 							<endpoint>http://192.168.0.47:7090</endpoint>
 							<junitReport>true</junitReport>
 							<!-- This folder is to set the default path for surefire reports -->
