@@ -16,7 +16,7 @@
 
   <ciManagement>
       <system>jenkins</system>
-      <url>http://192.168.0.47:8090/</url>
+      <url>http://192.168.0.47:8090/</url> 
   </ciManagement>
   
 <!--<dependencies>
