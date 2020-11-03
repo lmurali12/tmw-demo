@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="f344bb8c-add9-4fe2-aed7-b8c89fdae079" activeEnvironment="Default" name="PhoneValidation" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="4e061576-9ea6-47aa-ad97-6fed0788167d" wsaVersion="NONE" name="SOAPServiceBinding" type="wsdl" bindingName="{http://www.tmw.com/PhoneValidation/wsdl/1603967929975}SOAPServiceBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Lavanya/Official/POCs/TMW/API%20Testing/Final/TMWDemo/SOAP%20Service/PhoneValidation_gen2.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Lavanya\Official\POCs\TMW\API%20Testing\Final\TMWDemo\SOAP%20Service\PhoneValidation_gen2.wsdl"><con:part><con:url>file:\C:\Lavanya\Official\POCs\TMW\API%20Testing\Final\TMWDemo\SOAP%20Service\PhoneValidation_gen2.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Process" targetNamespace="http://www.tmw.com/PhoneValidation/wsdl/1603967929975" xmlns:ns="http://www.tmw.com/PhoneValidation/wsdl/1603967929975" xmlns:ns0="http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<con:soapui-project id="f344bb8c-add9-4fe2-aed7-b8c89fdae079" activeEnvironment="Default" name="PhoneValidation" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="4e061576-9ea6-47aa-ad97-6fed0788167d" wsaVersion="NONE" name="SOAPServiceBinding" type="wsdl" bindingName="{http://www.tmw.com/PhoneValidation/wsdl/1603967929975}SOAPServiceBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Lavanya/Official/POCs/TMW/API%20Testing/Final/TMWDemo/SOAP%20Service/PhoneValidation_gen2.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Lavanya\Official\POCs\TMW\API%20Testing\Final\TMWDemo\SOAP%20Service\PhoneValidation_gen2.wsdl"><con:part><con:url>file:\C:\Lavanya\Official\POCs\TMW\API%20Testing\Final\TMWDemo\SOAP%20Service\PhoneValidation_gen2.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Process" targetNamespace="http://www.tmw.com/PhoneValidation/wsdl/1603967929975" xmlns:ns="http://www.tmw.com/PhoneValidation/wsdl/1603967929975" xmlns:ns0="http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:types>
     <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0" xmlns:alp="http://www.tmw.com/Schemas/Common/PhoneValidationRequest/1.0.0">
       <xsd:element name="PhoneValidationRequest">
@@ -144,7 +144,12 @@
          </ns:Body>\r
       </ns:PhoneValidationRequest>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="validatePhone"/></con:call></con:operation></con:interface><con:testSuite id="b27e40d8-fbe1-40c5-b3a5-d407f3a6514c" name="SOAPServiceBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1ede42e5-508b-4a14-ab70-9676fae2fc2e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="validatePhone TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="d8f7aa61-7050-40a4-9779-7ab84e519320" name="validatePhone"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SOAPServiceBinding</con:interface><con:operation>validatePhone</con:operation><con:request name="validatePhone" id="db18458f-c849-4ed1-8a89-1e17d71dab7b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.0.47:7091/SOAPServiceBinding/process/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0">\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="validatePhone"/></con:call></con:operation></con:interface><con:interface xsi:type="con:RestService" id="624098e4-7351-4ff6-9563-50724f87bd54" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.0.47:7090" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://192.168.0.47:7090</con:endpoint></con:endpoints><con:resource name="Employee" path="/employee" id="c349804a-15eb-46af-88fa-3100bf3c9bee"><con:settings/><con:parameters><con:parameter><con:name>shortname</con:name><con:value>SS363</con:value><con:style>QUERY</con:style><con:default>SS363</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Employee 1" id="e403fad6-7ac5-4b7c-857d-46deea0bc1ad" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/plain;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d42ad808-c8ce-4e17-9cf5-fd77d950d757" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.0.47:7090</con:endpoint><con:request/><con:originalUri>http://192.168.0.47/employee</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="shortname" value="SR121" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>shortname</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="employee" path="/employee" id="5a342f39-faa6-4c76-92ec-9418810be3b5"><con:settings/><con:parameters/><con:method name="Method 1" id="41176e79-bfc8-48db-a7b4-3d1c5cf32686" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>400 415</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="f2ce1130-bc3e-415d-9ef5-c7ed296d708d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.0.47:7090</con:endpoint><con:request>{
+  "ShortName": "SR121",
+  "FullName": "Lavanya Murali",
+  "PhoneNo": "9090909090",
+  "Address": "Hyderabad"
+}</con:request><con:originalUri>http://192.168.0.47/employee</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="b27e40d8-fbe1-40c5-b3a5-d407f3a6514c" name="SOAPServiceBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1ede42e5-508b-4a14-ab70-9676fae2fc2e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="validatePhone TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="d8f7aa61-7050-40a4-9779-7ab84e519320" name="validatePhone"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>SOAPServiceBinding</con:interface><con:operation>validatePhone</con:operation><con:request name="validatePhone" id="db18458f-c849-4ed1-8a89-1e17d71dab7b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.0.47:7091/SOAPServiceBinding/process/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ns:PhoneValidationRequest>\r
@@ -176,4 +181,155 @@
 </soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="13b5c80d-c6e4-439f-aa3a-43e6256bf399" name="Contains"><con:configuration><token>Phone number is valid</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="ef950448-0979-4935-bfc5-eac4b8de33d6" name="XPath Match"><con:configuration><path>declare namespace ns='http://www.tmw.com/Schemas/PhoneValidationRequest/1.0.0';
 declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
 declare namespace tns='http://www.tmw.com/PhoneValidation/wsdl/1603967929975';
-//ns:StatusMessage</path><content>Phone number is valid</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="b36d612a-381c-4ed1-959c-9165ac51d80b" name="Not SOAP Fault"/><con:assertion type="SOAP Response" id="7b48a2fe-8297-49d0-9f4a-6c397b1a7c27" name="SOAP Response"/><con:assertion type="Invalid HTTP Status Codes" id="072e8a07-b9ac-48ce-8a5c-fa4177748602" name="Invalid HTTP Status Codes"><con:configuration><codes>401,404,500,400</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="validatePhone" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+//ns:StatusMessage</path><content>Phone number is valid</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="b36d612a-381c-4ed1-959c-9165ac51d80b" name="Not SOAP Fault"/><con:assertion type="SOAP Response" id="7b48a2fe-8297-49d0-9f4a-6c397b1a7c27" name="SOAP Response"/><con:assertion type="Invalid HTTP Status Codes" id="072e8a07-b9ac-48ce-8a5c-fa4177748602" name="Invalid HTTP Status Codes"><con:configuration><codes>401,404,500,400</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="validatePhone" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="976390e3-e829-45a9-94b5-74e3ea98fdc3" name="REST Functional Test Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3cf22e81-a46f-435f-955b-64c68cf11533" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Add Employee" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script - Test Data" id="821ffb61-2a9e-4bb6-86fb-7b35659a014e"><con:settings/><con:config><script>
+import jxl.* //Import Java Excel library
+import jxl.write.*
+import com.eviware.soapui.support.XmlHolder
+
+def TestCase = context.testCase
+def FilePath =  "C:\\Lavanya\\Official\\POCs\\TMW\\API Testing\\Final\\TMWDemo\\Rest Service\\TestData_AddEmployee.xls"
+def count
+
+//XSSFWorkbook wb = new XSSFWorkbook (FilePath)
+Workbook Workbook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = Workbook1.getSheet(0)
+def rowsCount = Sheet1.getRows()
+def colsCount = Sheet1.getColumns()
+
+
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+count = PropertiesTestStep.getPropertyValue("Counter").toInteger()
+
+//If Total records unknown (at start), get the row count from excel
+if (PropertiesTestStep.getPropertyValue("Total").toString() == "")
+    PropertiesTestStep.setPropertyValue("Total",Sheet1.getRows().toString())
+
+count++
+
+
+log.info (count)
+
+//Read the excel data
+Cell Field1 = Sheet1.getCell(0,count)
+
+
+
+log.info("Count is " + count.toString() + ". TestRequest: " + Field1.getContents())
+Workbook1.close()
+
+//Copy the excel test data to properties in Properties Test step
+PropertiesTestStep.setPropertyValue("TestRequest", Field1.getContents())
+PropertiesTestStep.setPropertyValue("Counter", count.toString())
+
+if(count == PropertiesTestStep.getPropertyValue("Total").toInteger() - 1)
+	PropertiesTestStep.setPropertyValue("End","True")
+	
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Method 1 - Request 1" id="ae76a547-06c6-424c-b056-413a5ba96ca5"><con:settings/><con:config service="http://192.168.0.47:7090" resourcePath="/employee" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - Request 1" id="419d7e02-070f-42e8-8de4-92ce068621d0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#TestSuite#RestEndPointURL}</con:endpoint><con:request>${Properties#TestRequest}</con:request><con:originalUri>http://192.168.0.47/employee</con:originalUri><con:assertion type="Simple Contains" id="660b4db5-7471-44dd-9c9c-fb83074726a2" name="Contains"><con:configuration><token>Employee added successfully</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="326bd095-fd48-4a62-a3b3-e5780fa54dc3" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="cc4c9f6d-aef8-4c5c-8de5-8131314f2e33" name="Response SLA"><con:configuration><SLA>800</SLA></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="2602f2f2-f6fe-4ff9-9db1-5af2afb362a3" name="Invalid HTTP Status Codes"><con:configuration><codes>400,404</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="a92c4eeb-bf0a-44ac-84ee-fcf35fd07fc0" name="Script Assertion"><con:configuration><scriptText>
+import jxl.* //Import Java Excel library
+import jxl.write.*
+import com.eviware.soapui.support.XmlHolder
+
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+
+def response = context.expand( '${Method 1 - Request 1#Response}' )
+//Write the Response to the console
+log.info response
+
+//verify if the Employee is added successfully
+if ( response.toString().trim().contains("Employee added Successfully")) 
+{
+	log.info("Employee Added Successfully to database.") 
+	//Store the response data for Get Employee test case
+	PropertiesTestStep.setPropertyValue("TestResponse",response)
+}
+else 
+	log.info("Employee could not be added successfully" + response.toString())
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Data Loop" id="a220b8ce-78c0-4da9-8fc3-97574ba0f2c4"><con:settings/><con:config><script>def TestCase = context.testCase
+
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+Stop = PropertiesTestStep.getPropertyValue("End").toString()
+if(Stop =="True")
+{
+	log.info("Exit Groovy Script - Data Loop")
+	PropertiesTestStep.setPropertyValue("Total","")
+	PropertiesTestStep.setPropertyValue("TestRequest", "")
+	PropertiesTestStep.setPropertyValue("Counter", "0")
+	PropertiesTestStep.setPropertyValue("End", "False")
+}
+else
+	testRunner.gotoStepByName("Groovy Script - Test Data")</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="3b878b9c-20c6-4a1d-ac91-bc0bfc747f80"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Counter</con:name><con:value>0</con:value></con:property><con:property><con:name>Total</con:name><con:value/></con:property><con:property><con:name>End</con:name><con:value>False</con:value></con:property><con:property><con:name>TestRequest</con:name><con:value/></con:property><con:property><con:name>TestResponse</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties><con:property><con:name>TestRequest</con:name><con:value>{     "ShortName":  "SR121",   "FullName": "Lavanya Murali",   "PhoneNo": "9090909090",   "Address": "Hyderabad" }</con:value></con:property></con:properties></con:testCase><con:testCase id="e4985b03-e07b-4e38-8164-8b7dd7f982ab" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Employee" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script - Test Data" id="fdd109a1-1bb9-43db-b615-6b6b2f2e01bb"><con:settings/><con:config><script>
+import jxl.* //Import Java Excel library
+import jxl.write.*
+import com.eviware.soapui.support.XmlHolder
+
+def TestCase = context.testCase
+def FilePath =  "C:\\Lavanya\\Official\\POCs\\TMW\\API Testing\\Final\\TMWDemo\\Rest Service\\TestData_GetEmployee.xls"
+def count
+def total
+
+//XSSFWorkbook wb = new XSSFWorkbook (FilePath)
+Workbook Workbook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = Workbook1.getSheet(0)
+def rowsCount = Sheet1.getRows()
+def colsCount = Sheet1.getColumns()
+
+
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+count = PropertiesTestStep.getPropertyValue("Counter").toInteger()
+
+//If Total records unknown (at start), get the row count from excel
+if (PropertiesTestStep.getPropertyValue("Total").toString() == "")
+    PropertiesTestStep.setPropertyValue("Total",Sheet1.getRows().toString())
+
+count++
+
+
+log.info (count)
+
+//Read the excel data
+Cell Field1 = Sheet1.getCell(0,count)
+
+
+
+log.info("Count is " + count.toString() + ". Short Name: " + Field1.getContents())
+Workbook1.close()
+
+//Copy the excel test data to properties in Properties Test step
+PropertiesTestStep.setPropertyValue("ShortName", Field1.getContents())
+PropertiesTestStep.setPropertyValue("Counter", count.toString())
+
+total = PropertiesTestStep.getPropertyValue("Total").toInteger()
+
+if(count == total - 1)
+{
+	PropertiesTestStep.setPropertyValue("End","True")
+}	
+
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="Employee 1 - Request 1" id="8af0d11d-cd13-4b24-9026-b3d94ba2df6c"><con:settings/><con:config service="http://192.168.0.47:7090" resourcePath="/employee" methodName="Employee 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Employee 1 - Request 1" id="bb24afa2-1bd9-439d-8397-a015c9dddfcf" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#TestSuite#RestEndPointURL}</con:endpoint><con:request/><con:originalUri>http://192.168.0.47/employee</con:originalUri><con:assertion type="Simple Contains" id="6bdea8f8-3c97-4a6e-86c2-1c859beb91f9" name="Contains"><con:configuration><token>Senthil Sethuraman</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="5c3dcc0b-0152-4343-bb54-b6d77bb55a40" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f2672f3c-7550-4785-b58e-f556b4a58dfa" name="Response SLA"><con:configuration><SLA>500</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="85ba0804-af14-4a9b-9100-d0017e46fb61" name="Script Assertion"><con:configuration><scriptText>//Paste the msg
+
+def shortName = messageExchange.modelItem.testStep.testCase.getPropertyValue("ShortName")
+def restEndPointURL = messageExchange.modelItem.testStep.testCase.testSuite.project.getPropertyValue("RestEndPointURL")
+
+log.info context.expand( 'Short Name is ' + shortName )
+ </scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="shortname" value="${#TestCase#ShortName}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>shortname</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Data Loop" id="d8e761f7-b338-4b82-8daf-c87d74f6a452"><con:settings/><con:config><script>def TestCase = context.testCase
+
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+Stop = PropertiesTestStep.getPropertyValue("End").toString()
+if(Stop =="True")
+{
+	log.info("Exit Groovy Script - Data Loop")
+	PropertiesTestStep.setPropertyValue("Total","")
+	PropertiesTestStep.setPropertyValue("ShortName", "")
+	PropertiesTestStep.setPropertyValue("Counter", "0")
+	PropertiesTestStep.setPropertyValue("End", "False")
+
+}
+else
+	testRunner.gotoStepByName("Groovy Script - Test Data")</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="1eb94a5e-4613-402d-b1e2-42d232715968"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Counter</con:name><con:value>0</con:value></con:property><con:property><con:name>Total</con:name><con:value/></con:property><con:property><con:name>End</con:name><con:value>False</con:value></con:property><con:property><con:name>ShortName</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties><con:property><con:name>ShortName</con:name><con:value>SS298</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>RestEndPointURL</con:name><con:value>http://192.168.0.47:7090</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
