@@ -1,0 +1,7 @@
+"Test Suite","Test Case","Test Step","Step Type","Step Status","Result message","Execution Date"
+"REST Functional Test Suite","Add Employee","Groovy Script - Test Data","groovy","FAILED","Message:java.lang.NumberFormatException: For input string: ""
+Message:error at line: 18
+","02-Nov-2020 17_11",
+"REST Functional Test Suite","Add Employee","Groovy Script - Test Data","groovy","FAILED","Message:java.lang.NumberFormatException: For input string: ""
+Message:error at line: 18
+","02-Nov-2020 17_11",

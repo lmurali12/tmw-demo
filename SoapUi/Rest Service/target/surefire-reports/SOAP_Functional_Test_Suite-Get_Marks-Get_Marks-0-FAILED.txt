@@ -1,0 +1,59 @@
+Status: FAILED
+Time Taken: 268
+Size: 1267
+Timestamp: Thu Oct 29 15:09:35 IST 2020
+TestStep: Get Marks
+
+----------------- Messages ------------------------------
+[SOAP Response] error: The document is not a Envelope@http://schemas.xmlsoap.org/soap/envelope/: document element mismatch got html
+[SOAP Response] The document is not a Envelope@http://schemas.xmlsoap.org/soap/envelope/: document element mismatch got html
+
+----------------- Properties ------------------------------
+Endpoint: http://192.168.0.47:7090
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : "operation"
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Host : 192.168.0.47:7090
+Accept-Encoding : gzip,deflate
+Content-Length : 304
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.example.org/schema/1603476554587">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:operationRequest>
+         <Name>Sahasra</Name>
+      </ns:operationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : must-revalidate,no-cache,no-store
+Server : Jetty(8.1.16.v20140903)
+#status# : HTTP/1.1 404 Not Found
+Content-Length : 1267
+Date : Thu, 29 Oct 2020 09:39:35 GMT
+Content-Type : text/html;charset=ISO-8859-1
+
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+      <title>Error 404 Not Found</title>
+   </head>
+   <body>
+      <h2>HTTP ERROR: 404</h2>
+      <p>
+         Problem accessing /. Reason:
+         <pre>Not Found</pre>
+      </p>
+      <hr/>
+      <i>
+         <small>Powered by Jetty://</small>
+      </i>
+   </body>
+</html>

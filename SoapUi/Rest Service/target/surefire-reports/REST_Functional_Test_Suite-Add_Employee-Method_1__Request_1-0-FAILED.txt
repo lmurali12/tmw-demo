@@ -1,0 +1,45 @@
+Status: FAILED
+Time Taken: 654
+Size: 29
+Timestamp: Thu Oct 29 15:13:21 IST 2020
+TestStep: Method 1 - Request 1
+
+----------------- Messages ------------------------------
+[Response SLA] Response did not meet SLA 654/500
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://192.168.0.47:7090
+Method: POST
+StatusCode: 200
+URL: http://192.168.0.47:7090/employee
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [192.168.0.47:7090]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [116]
+Content-Type: [application/json]
+
+POST http://192.168.0.47:7090/employee HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Content-Length: 116
+Host: 192.168.0.47:7090
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+{     "ShortName":  "SR121",   "FullName": "Lavanya Murali",   "PhoneNo": "9090909090",   "Address": "Hyderabad" }
+
+
+
+---------------- Response --------------------------
+Server: [Jetty(8.1.16.v20140903)]
+Access-Control-Allow-Origin: [*]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [29]
+Date: [Thu, 29 Oct 2020 09:43:22 GMT]
+Content-Type: [application/json;charset=UTF-8]
+
+"Employee added successfully"
